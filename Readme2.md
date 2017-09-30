@@ -29,14 +29,14 @@ https://facebook.github.io/react/tutorial/tutorial.html
 
 * load data from same java spring boot backend that angular 2 
 
-* add component : dynamic clock , keep up with the time
+
 * add componenet : calendar date, tie picker, datetime, modal, form, drag & drop, live search, it18n
 * handle assets management : CSS, web fonts, images, and svg c
 * add angular material & boostrap or grid manager
 
 
 ## DONE
-
+* add component : dynamic clock , keep up with the time
 
 ## Directory Structure
 
