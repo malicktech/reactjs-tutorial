@@ -1,15 +1,14 @@
-import React, { Component } from 'react';
+// @flow
+
+import React, { Component, PureComponent } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Clock from './Clock';
 import ClickComponent from './ClickComponent';
-import ColoredBlock from './ColoredBlock.js';
-import Products from './Products.js';
+import ColoredBlock from './ColoredBlock';
+import Products from './Products';
 
-
-let time = new Date().toLocaleString();
-
-class App extends Component {
+class App extends PureComponent {
   render() {
     return (
       <div className="App">
@@ -17,19 +16,20 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title">Welcome to React</h1>
         </header>
-        <p className="App-intro"> 
-          Hello {this.props.name}! 
+        <p className="App-intro">
+          Hello {this.props.name}! <br />
+          nickname {this.props.nickname}!
         </p>
         <p className="App-intro">
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
-        <Clock ></Clock>
+        <Clock />
         <ClickComponent />
         <div className="main-content">
           <ColoredBlock />
         </div>
         <section>
-          <Products ></Products>
+          <Products />
         </section>
         <footer>Footer...</footer>
       </div>

@@ -10,11 +10,12 @@ class ClickComponent extends React.Component {
     console.log(this);
   }
   render() {
-    return (
+    const element = (
       <button onClick={this.handleClick}>
         Click me
       </button>
     );
+    return element;
   }
 }
 

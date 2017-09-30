@@ -4,7 +4,19 @@ import './index.css';
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 
-let name = "Malick";
+const nickname = 'CitizenDiop';
 
-ReactDOM.render(<App name={name} />, document.getElementById('root'));
+function formatName(user) {
+  return `${user.firstName} ${user.lastName}`;
+}
+
+const user = {
+  firstName: 'Malick',
+  lastName: 'DIOP',
+};
+
+ReactDOM.render(
+  <App name={formatName(user)} nickname={nickname} />,
+  document.getElementById('root'),
+);
 registerServiceWorker();
