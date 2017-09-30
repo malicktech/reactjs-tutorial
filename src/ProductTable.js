@@ -6,6 +6,8 @@ class ProductTable extends React.Component {
   constructor(props) {
     super(props);
     this.sortByKeyAndOrder = this.sortByKeyAndOrder.bind(this);
+    this.handleSort = this.handleSort.bind(this);
+    this.handleDestroy = this.handleDestroy.bind(this);
     this.state = {
       sort: {
         column: 'name',
@@ -31,13 +33,24 @@ class ProductTable extends React.Component {
     let productsAsArray = Object.keys(this.props.products).map((pid) => this.props.products[pid]);
     return productsAsArray.sort(this.sortByKeyAndOrder);
   }
+  handleDestroy(id) {
+    this.props.onDestroy(id);
+  }
+  handleSort(column, direction) {
+    this.setState({
+      sort: {
+        column: column,
+        direction: direction
+      }
+    });
+  }
   render() {
     var rows = [];
     this.sortProducts().forEach((product) => {
       if (product.name.indexOf(this.props.filterText) === -1 || (!product.stocked && this.props.inStockOnly)) {
         return;
       }
-      rows.push(<ProductRow product={product} key={product.id}></ProductRow>);
+      rows.push(<ProductRow product={product} key={product.id} onDestroy={this.handleDestroy}></ProductRow>);
     });
 
     return (
@@ -46,10 +59,12 @@ class ProductTable extends React.Component {
           <thead>
             <tr>
               <SortableColumnHeader
+                onSort={this.handleSort}
                 currentSort={this.state.sort}
                 column="name"
               ></SortableColumnHeader>
               <SortableColumnHeader
+                onSort={this.handleSort}
                 currentSort={this.state.sort}
                 column="price"
               ></SortableColumnHeader>
