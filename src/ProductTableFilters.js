@@ -4,10 +4,19 @@ class ProductTableFilters extends React.Component {
   render() {
     return (
       <form>
-        <input type="text" placeholder="Search..." />
+        <input
+          type="text"
+          placeholder="Search..."
+          value={this.props.filterText}
+        />
         <p>
-          <input type="checkbox" />&nbsp;Only show stocked products
-      </p>
+          <input
+            type="checkbox"
+            checked={this.props.inStockOnly}
+          />
+          &nbsp;
+            Only show products in stock
+          </p>
       </form>
     );
   }

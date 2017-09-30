@@ -9,15 +9,27 @@ var PRODUCTS = {
   '3': {id: 3, category: 'Musical Instruments', price: '$11,000', stocked: false, name: 'Fortepiano'},
   '4': {id: 4, category: 'Furniture', price: '$799', stocked: true, name: 'Chaise Lounge 2'},
   '5': {id: 5, category: 'Furniture', price: '$1,300', stocked: false, name: 'Dining Table'},
-  '6': {id: 6, category: 'Furniture', price: '$100', stocked: true, name: 'Bean Bag'}
+  '6': {id: 6, category: 'Furniture', price: '$100', stocked: true, name: 'Bean Bag'},
 };
 
 class Products extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      filterText: '',
+      inStockOnly: false,
+      products: PRODUCTS
+    };
+  }
   render() {
     return (
       <div>
-        <ProductTableFilters ></ProductTableFilters>
-        <ProductTable products={PRODUCTS} ></ProductTable>
+        <ProductTableFilters
+        filterText={this.state.filterText}
+          inStockOnly={this.state.inStockOnly} ></ProductTableFilters>
+        <ProductTable products={this.state.products}
+          filterText={this.state.filterText}
+          inStockOnly={this.state.inStockOnly} ></ProductTable>
         <ProductForm ></ProductForm>
       </div>
     );
