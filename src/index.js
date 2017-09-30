@@ -4,5 +4,7 @@ import './index.css';
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+let name = "Malick";
+
+ReactDOM.render(<App name={name} />, document.getElementById('root'));
 registerServiceWorker();
