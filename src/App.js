@@ -3,6 +3,8 @@ import logo from './logo.svg';
 import './App.css';
 import Clock from './Clock';
 import ClickComponent from './ClickComponent';
+import ColoredBlock from './ColoredBlock.js';
+
 
 let time = new Date().toLocaleString();
 
@@ -21,7 +23,11 @@ class App extends Component {
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
         <Clock ></Clock>
-        <ClickComponent></ClickComponent>
+        <ClickComponent />
+        <div className="main-content">
+          <ColoredBlock />
+        </div>
+        <footer>Footer...</footer>
       </div>
     );
   }
