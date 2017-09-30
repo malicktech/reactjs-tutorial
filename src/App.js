@@ -1,6 +1,6 @@
 // @flow
 
-import React, { Component, PureComponent } from 'react';
+import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Clock from './Clock';
@@ -8,7 +8,7 @@ import ClickComponent from './ClickComponent';
 import ColoredBlock from './ColoredBlock';
 import Products from './Products';
 
-class App extends PureComponent {
+class App extends Component {
   render() {
     return (
       <div className="App">

@@ -3,7 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "flow-bin": "^0.56.0",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
     "react-scripts": "1.0.14"
@@ -16,6 +15,8 @@
     "flow": "flow"
   },
   "devDependencies": {
+    "flow-bin": "^0.56.0",
+    "babel-cli": "^6.26.0",
     "babel-eslint": "^8.0.1",
     "babel-preset-flow": "^6.23.0",
     "eslint": "^4.8.0",
