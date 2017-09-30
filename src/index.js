@@ -15,6 +15,7 @@ const user = {
   lastName: 'DIOP',
 };
 
+//  render a React element into a root DOM node
 ReactDOM.render(
   <App name={formatName(user)} nickname={nickname} />,
   document.getElementById('root'),
