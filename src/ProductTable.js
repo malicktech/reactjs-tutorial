@@ -11,15 +11,15 @@ class ProductTable extends React.Component {
     this.state = {
       sort: {
         column: 'name',
-        direction: 'desc'
-      }
+        direction: 'desc',
+      },
     };
   }
   sortByKeyAndOrder(objectA, objectB) {
-    let isDesc = this.state.sort.direction === 'desc' ? 1 : -1;
+    const isDesc = this.state.sort.direction === 'desc' ? 1 : -1;
     let [a, b] = [objectA[this.state.sort.column], objectB[this.state.sort.column]];
     if (this.state.sort.column === 'price') {
-      [a, b] = [a, b].map((value) => parseFloat(value.replace(/[^\d\.]/g, ''), 10));
+      [a, b] = [a, b].map(value => parseFloat(value.replace(/[^\d\.]/g, ''), 10));
     }
     if (a > b) {
       return 1 * isDesc;
@@ -30,7 +30,7 @@ class ProductTable extends React.Component {
     return 0;
   }
   sortProducts() {
-    let productsAsArray = Object.keys(this.props.products).map((pid) => this.props.products[pid]);
+    const productsAsArray = Object.keys(this.props.products).map(pid => this.props.products[pid]);
     return productsAsArray.sort(this.sortByKeyAndOrder);
   }
   handleDestroy(id) {
@@ -39,18 +39,21 @@ class ProductTable extends React.Component {
   handleSort(column, direction) {
     this.setState({
       sort: {
-        column: column,
-        direction: direction
-      }
+        column,
+        direction,
+      },
     });
   }
   render() {
-    var rows = [];
+    const rows = [];
     this.sortProducts().forEach((product) => {
-      if (product.name.indexOf(this.props.filterText) === -1 || (!product.stocked && this.props.inStockOnly)) {
+      if (
+        product.name.indexOf(this.props.filterText) === -1 ||
+        (!product.stocked && this.props.inStockOnly)
+      ) {
         return;
       }
-      rows.push(<ProductRow product={product} key={product.id} onDestroy={this.handleDestroy}></ProductRow>);
+      rows.push(<ProductRow product={product} key={product.id} onDestroy={this.handleDestroy} />);
     });
 
     return (
@@ -62,12 +65,12 @@ class ProductTable extends React.Component {
                 onSort={this.handleSort}
                 currentSort={this.state.sort}
                 column="name"
-              ></SortableColumnHeader>
+              />
               <SortableColumnHeader
                 onSort={this.handleSort}
                 currentSort={this.state.sort}
                 column="price"
-              ></SortableColumnHeader>
+              />
             </tr>
           </thead>
           <tbody>{rows}</tbody>

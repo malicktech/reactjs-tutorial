@@ -57,6 +57,11 @@ https://openclassrooms.com/courses/build-web-apps-with-reactjs/practice-add-a-va
 
 * OpenClassRoom  | https://openclassrooms.com/courses/build-web-apps-with-reactjs
 
+* Typechecking With PropTypes / https://reactjs.org/docs/typechecking-with-proptypes.html
+* https://reactjs.org/docs/state-and-lifecycle.html
+Components and Props
+https://reactjs.org/docs/handling-events.html
+
 ## Directory Structure
 
 - Public/ 
