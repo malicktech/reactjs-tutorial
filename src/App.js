@@ -4,6 +4,7 @@ import './App.css';
 import Clock from './Clock';
 import ClickComponent from './ClickComponent';
 import ColoredBlock from './ColoredBlock.js';
+import Products from './Products.js';
 
 
 let time = new Date().toLocaleString();
@@ -27,6 +28,9 @@ class App extends Component {
         <div className="main-content">
           <ColoredBlock />
         </div>
+        <section>
+          <Products ></Products>
+        </section>
         <footer>Footer...</footer>
       </div>
     );
