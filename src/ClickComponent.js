@@ -1,22 +1,12 @@
 import React from 'react';
 
-class ClickComponent extends React.Component {
-  constructor(props) {
-    console.log('constructor');
-    super(props);
-    this.handleClick = this.handleClick.bind(this);
-  }
-  handleClick(event) {
+// stateless functionnal
+
+const ClickComponent = ({}) => {
+  const handleClick = (event) => {
     console.log(this);
-  }
-  render() {
-    const element = (
-      <button onClick={this.handleClick}>
-        Click me
-      </button>
-    );
-    return element;
-  }
-}
+  };
+  return <button onClick={handleClick}>Click me</button>;
+};
 
 export default ClickComponent;
