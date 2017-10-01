@@ -1,7 +1,10 @@
 import React from 'react';
 
-const RESET_VALUES = {id: '', category: '', price: '', stocked: false, name: ''};
+const RESET_VALUES = { id: '', category: '', price: '', stocked: false, name: '' };
 
+/**
+ * https://reactjs.org/docs/forms.html
+ */
 class ProductForm extends React.Component {
   constructor(props) {
     super(props);
@@ -9,11 +12,11 @@ class ProductForm extends React.Component {
     this.handleSave = this.handleSave.bind(this);
     this.state = {
       product: Object.assign({}, RESET_VALUES),
-      errors: {}
+      errors: {},
     };
   }
-  handleChange(e) {
-    const target = e.target;
+  handleChange(event) {
+    const target = event.target;
     const value = target.type === 'checkbox' ? target.checked : target.value;
     const name = target.name;
 
@@ -26,7 +29,7 @@ class ProductForm extends React.Component {
     this.props.onSave(this.state.product);
     this.setState({
       product: Object.assign({}, RESET_VALUES),
-      errors: {}
+      errors: {},
     });
     e.preventDefault();
   }
@@ -38,30 +41,48 @@ class ProductForm extends React.Component {
           <label>
             Name
             <br />
-            <input type="text" name="name" onChange={this.handleChange} value={this.state.product.name}/>
+            <input
+              type="text"
+              name="name"
+              onChange={this.handleChange}
+              value={this.state.product.name}
+            />
           </label>
         </p>
         <p>
           <label>
             Category
             <br />
-            <input type="text" name="category" onChange={this.handleChange} value={this.state.product.category} />
+            <select value={this.state.product.category} onChange={this.handleChange}>
+              <option value="Sporting Goods">Sporting Goods</option>
+              <option value="Electronics">Electronics</option>
+            </select>
           </label>
         </p>
         <p>
           <label>
             Price
             <br />
-            <input type="text" name="price" onChange={this.handleChange} value={this.state.product.price} />
+            <input
+              type="text"
+              name="price"
+              onChange={this.handleChange}
+              value={this.state.product.price}
+            />
           </label>
         </p>
         <p>
           <label>
-            <input type="checkbox" name="stocked" onChange={this.handleChange} checked={this.state.product.stocked}/>
+            <input
+              type="checkbox"
+              name="stocked"
+              onChange={this.handleChange}
+              checked={this.state.product.stocked}
+            />
             &nbsp;In stock?
           </label>
         </p>
-        <input type="submit" value="Save" onClick={this.handleSave}/>
+        <input type="submit" value="Save" onClick={this.handleSave} />
       </form>
     );
   }
