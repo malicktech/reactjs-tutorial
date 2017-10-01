@@ -24,15 +24,35 @@ https://hackernoon.com/configure-eslint-prettier-and-flow-in-vs-code-for-react-d
 
 ## TODO
 
-Quick start
-*https://facebook.github.io/react/docs/installation.html
+* 
+* Développement JS moderne : REACT.js, FLUX, REDUX et GraphQL
+https://www.youtube.com/watch?v=F0Ral7AJ1rs
 
-*https://reactjs.org/docs/thinking-in-react.html
+* Quick start 
+https://facebook.github.io/react/docs/installation.html
+
+* https://reactjs.org/docs/thinking-in-react.html
+
+* http://apprendre-le-js.com/react-par-la-pratique-introduction/
+
+
+* créer un petit jeux de role avec reactjs
+https://openclassrooms.com/courses/4555591?status=waiting-for-publication
+
+* aDVANCED
+https://reactjs.org/docs/jsx-in-depth.html
+
 
 https://github.com/facebookincubator/create-react-app
 
 *https://facebook.github.io/react/tutorial/tutorial.html
 
+* https://falkodev.gitbooks.io/tuto-symfony-react-webpack-babel/content/
+
+* react router
+https://github.com/ReactTraining/react-router
+
+* Layout
 
 * Add a validation message to product add form
 https://openclassrooms.com/courses/build-web-apps-with-reactjs/practice-add-a-validation-message
@@ -49,6 +69,7 @@ https://openclassrooms.com/courses/build-web-apps-with-reactjs/practice-add-a-va
 * add angular material & boostrap or grid manager
 
 * NOdejs/express / next js
+* GraphQL
 * REdux
 * FLOW, static type checker
 * IMMUTABLE.JS
@@ -62,6 +83,11 @@ https://openclassrooms.com/courses/build-web-apps-with-reactjs/practice-add-a-va
 * https://reactjs.org/docs/state-and-lifecycle.html
 Components and Props
 https://reactjs.org/docs/handling-events.html
+form
+list a key
+conditional rendering
+handling events
+
 
 ## Directory Structure
 
@@ -91,7 +117,7 @@ contains all the libraries and external code that your package manager loads bas
 
 # Toolchain
 
-- Stack
+- final Stack
 Babel
 Eslint
 Webpack
