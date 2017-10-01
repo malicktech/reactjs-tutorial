@@ -23,9 +23,9 @@ s les donnée changes, on re_rend la vue avec les nouvelles données
 
 
 * Approche orienté composanat : 
-component : encapsulate blocks of functionality and design
+component : encapsulate blocks of functionality and design : markup + logic + style
 Components are the building blocks of a React app. 
-Components let you split the UI into independent, reusable pieces, and think about each piece in isolation.
+Components let you split the UI into small, independent, reusable pieces, and think about each piece in isolation.
 autonome, réutulisable, composables, cohérente, facilement refactorer
 web componenent: eusable page elements that encapsulate pieces of functionality, such as a search input that offers live previews of search results, or a button that shows a tooltip on hover.
 

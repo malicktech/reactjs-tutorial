@@ -1,6 +1,9 @@
-* React tutorial
+# React tutorial
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
+# stack
+- redux  : state management 
+- RxJS Observables
 # run
 
 
@@ -24,9 +27,11 @@ https://hackernoon.com/configure-eslint-prettier-and-flow-in-vs-code-for-react-d
 
 ## TODO
 
-* 
-* Développement JS moderne : REACT.js, FLUX, REDUX et GraphQL
-https://www.youtube.com/watch?v=F0Ral7AJ1rs
+* Netflix JavaScript Talks - RxJS + Redux + React = Amazing!
+https://www.youtube.com/watch?v=AslncyG8whg
+
+* http://tech.m6web.fr/isomorphic-single-page-app-parfaite-react-flux/
+
 
 * Quick start 
 https://facebook.github.io/react/docs/installation.html
@@ -36,12 +41,18 @@ https://facebook.github.io/react/docs/installation.html
 * http://apprendre-le-js.com/react-par-la-pratique-introduction/
 
 
+* redux samples
+https://github.com/reactjs/redux/tree/master/examples
+
 * créer un petit jeux de role avec reactjs
 https://openclassrooms.com/courses/4555591?status=waiting-for-publication
 
 * aDVANCED
 https://reactjs.org/docs/jsx-in-depth.html
 
+
+* REdux - rxJS observable
+epics
 
 https://github.com/facebookincubator/create-react-app
 
@@ -62,7 +73,7 @@ https://openclassrooms.com/courses/build-web-apps-with-reactjs/practice-add-a-va
 
 * load data from same java spring boot backend that angular 2 
 
-
+* websocket
 
 * add componenet : calendar date, tie picker, datetime, modal, form, drag & drop, live search, it18n
 * handle assets management : CSS, web fonts, images, and svg c
@@ -74,6 +85,10 @@ https://openclassrooms.com/courses/build-web-apps-with-reactjs/practice-add-a-va
 * FLOW, static type checker
 * IMMUTABLE.JS
 *....
+
+* app mobile : ionic and react native
+learn once, write anywhere
+
 
 ## DONE
 
@@ -87,6 +102,10 @@ form
 list a key
 conditional rendering
 handling events
+
+* Développement JS moderne : REACT.js, FLUX, REDUX et GraphQL
+https://www.youtube.com/watch?v=F0Ral7AJ1rs
+
 
 
 ## Directory Structure
@@ -115,10 +134,11 @@ describes the exact version of each dependency.
 contains all the libraries and external code that your package manager loads based on the dependencies list you define in  package.json
 
 
-# Toolchain
+# Toolchain / developer eXperience 
+for efficience workflow
 
 - final Stack
-Babel
+Babel (ES2015+)
 Eslint
 Webpack
 FLow
@@ -128,3 +148,12 @@ FLow
     - Prettier JavaScript Formatter
     - Flow Language Support
     - Babel ES6/ES7
+
+
+# to check 
+- DX
+error handling
+hot reload
+debbuger
+
+redux devtools

@@ -52,11 +52,8 @@ const store = createStore(
   }),
 );
 
-// dispatch : send action to store
+// /////////////////////// Components
 
-/* 
-    Components
- */
 function Header() {
   return (
     <div>

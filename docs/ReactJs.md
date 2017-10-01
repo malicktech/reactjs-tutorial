@@ -6,6 +6,12 @@ React : Javascript Library dévellopé par facebook depuis 2013
 version : 16.0.0
 
 
+# main concept
+- Declarative UI
+- Immutability
+- Composition
+- Universal : SEO friendly & perforamnce
+
 # caractéristiques 
 moteur de rendu JavaScript
 se démarque de ses concurrents par sa flexibilité, son éfficacité  et ses performances,
@@ -36,7 +42,7 @@ adapté à la création d'architectures modulaires
 représentation du DOM en JavaScript
 Au lieu de générer le DOM lui meme comme avec un langage de templating, c'est-à-dire au lieu de dialoguer avec les API du navigateur pour construire le DOM, on ne génère qu'une arborescence d'objets JavaScript en mémoire
 En termes de performance, React optimise les opérations sur le DOM en utilisant un DOM virtuel.
-	
+les manios du DOM direct c'est trés consomatrice de ressources
 * JSX : 
 langage qui permet de générer des objets Javascript avec une notation similaire à HTML
  langage qui étend JavaScript avec une syntaxe déclarative permettant de définir le mode de rendu HTML du composant.
@@ -81,7 +87,10 @@ Props are read-only
 Inside your component, you should only access  this.props  to read values. 
 You should never modify the  this.props  property.
 
-state : 
+* Universal : SEO friendly
+le serveru rend la première page, et le navigatur prend le relais
+
+* state : 
 représente état interne du composant,
 state  is a private property of components 
 Nothing outside of a component should ever know about a component's state.
@@ -89,7 +98,8 @@ mutable par le composnat lui même;
 c'est le changement de l'état qui lance la mise à jour de la vue;
 le double data binding est supporté mais non encouragé
 
-state
+- state changes are, UIchanges
+- cascading update
 
 
 
@@ -114,11 +124,14 @@ c'est la facon qu'a choisis facebook pour construire ses apps en complément de 
 basé sur les flux de donnée unidirectionnel
 plus simle à maintenir
 
+
+
 *  Redux
 state management
 like rxJS in angular 4
 FLux + reducer = flux
 implémentation de référene du pattern flux
+sert à gérer les donées partagés dans diffrent composnant
 il permet de gérer la prblèmatique des states
 sert à organiser la logique
 putôt que de mettre les states dans les composants, on les gère dans redux
@@ -126,6 +139,11 @@ l'app doit porter le moint de donnée/etats possible, tout dit être localisé d
 state  : 
 action : 
 reducer :
+store : contient l'arbre de donnée, c'est lui qui gère toute les données
+
+single state tree
+everything is data
+dispatch(action) >> reducers
 
 rules : 
 - Single source of truth ( ce qui est dans le state nedoit pas être ailleur, l'état de l'app est décrite dans objet simple)
@@ -134,6 +152,11 @@ rules :
 
 tools : looger, devtools, timetravels, undo, hot releao
 chrome redux devtools
+
+* RxJS
+observable ?
+reactive programming ?
+
 
 
 * NextJS
@@ -203,6 +226,16 @@ on a une prmière vue des données sans atendre le chargement du js
 dès que le js est chargé coté nav, react le détecte et se remixe et prend relais pour une app dynamique
 
 * web components
+
+
+* graphQl
+flexible response format 
+client specified queries
+strong -tping
+
+construit automatiquement les réponses 
+pas de route , pas d'api à écrire, on lance grpahqle et il sait quel format il doit les envoyé,
+c'est plus le serveur qui définis le format, amsi le clinet
 
 # Question / 
 

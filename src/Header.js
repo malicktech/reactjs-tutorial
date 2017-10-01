@@ -17,12 +17,16 @@ class Header extends Component {
           </Link>
           <h1 className="App-title">Welcome to React</h1>
         </header>
-        <Link className="btn" to={'/page1'}>
-          Page1
-        </Link>
-        <Link className="btn" to={'/page2'}>
-          Page2
-        </Link>
+        <li>
+          <Link className="btn" to={'/page1'}>
+            Page1
+          </Link>
+        </li>
+        <li>
+          <Link className="btn" to={'/page2'}>
+            Page2
+          </Link>
+        </li>
       </div>
     );
   }

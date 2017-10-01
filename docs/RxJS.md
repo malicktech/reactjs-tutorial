@@ -1,5 +1,15 @@
 
 
+# Async
+- users interactions (mouse, keybord, etc ...)
+- AJAX
+- Timer/Animation
+- WebSockets
+- Work Workers, etc ..
+
+use middleware to manage async/side effets
+
+callback : the most primitive way to handle async in javascript
 
 # Promise
 
@@ -27,4 +37,9 @@ use RxJS for observable
 
 # RxJs
 - lodash for async
+
+
+
+# Reactive Programming
+
 

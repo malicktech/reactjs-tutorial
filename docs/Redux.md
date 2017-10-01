@@ -18,18 +18,23 @@ A pure function that takes the previous state and an action, then compute and re
 
 
 * Dispatcher
-
-* Async
-- users interactions (mouse, keybord, etc ...)
-- AJAX
-- Timer/Animation
-- WebSockets
-- Work Workers, etc ..
+send action to store
 
 
-use middleware to manage async/side effets
 
-callback : the most primitive way to handle async in javascript
+
+
 
 # RxJS + REdux + React
+https://redux-observable.js.org/
+
 can be use to manage asynchronous 
+
+* redux-observable
+- Side effet management for reduxn using Epics
+- make it easier to compose and control async tasks, over any amount of time
+- Don't need to manage your own Rx subscriptions
+- can use redux tooling
+
+* Epics
+a function that takes a stream of all actions and dispatched and returns a stream of new actions to dispatch
