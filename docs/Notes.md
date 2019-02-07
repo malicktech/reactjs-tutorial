@@ -56,9 +56,6 @@ tout est fait avec js sur react
 C'est un framework déclaratif : 
 pas de template, on décrit à quoi va ressembler l'app à un moment t en fonction des donnée
 
- 
-
-
 en terme de rendu de message 'erreur, react est tres fort, c'est agréable
 
 

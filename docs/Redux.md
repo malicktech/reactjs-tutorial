@@ -22,9 +22,6 @@ send action to store
 
 
 
-
-
-
 # RxJS + REdux + React
 https://redux-observable.js.org/
 

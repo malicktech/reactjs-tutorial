@@ -4,8 +4,12 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 # stack
 - redux  : state management 
 - RxJS Observables
+- 
 # run
 
+`npm install --global create-react-app`
+
+`npm install`
 
 Runs the app in the development mode<br>
 `npm start`
@@ -25,7 +29,15 @@ Builds the app for production to the `build` folder.<br>
 * use pretier, eslint config fle, babel es6/es7, flow language support
 https://hackernoon.com/configure-eslint-prettier-and-flow-in-vs-code-for-react-development-c9d95db07213
 
+* Développement JS moderne : REACT.js, FLUX, REDUX et GraphQL
+https://www.youtube.com/watch?v=F0Ral7AJ1rs 
+
 ## TODO
+
+* https://openclassrooms.com/fr/courses/4664381-realisez-une-application-web-avec-react-js 
+
+* Code & Design - React JS #1 - Introduction - [FR]
+https://www.youtube.com/watch?v=jGbhVKrrLG0&list=PL0TnHYy48T2wemOkBpkIrdXrORdU4cdH9 
 
 * Netflix JavaScript Talks - RxJS + Redux + React = Amazing!
 https://www.youtube.com/watch?v=AslncyG8whg
@@ -56,7 +68,7 @@ epics
 
 https://github.com/facebookincubator/create-react-app
 
-*https://facebook.github.io/react/tutorial/tutorial.html
+* https://reactjs.org/tutorial/tutorial.html
 
 * https://falkodev.gitbooks.io/tuto-symfony-react-webpack-babel/content/
 
@@ -134,7 +146,8 @@ describes the exact version of each dependency.
 contains all the libraries and external code that your package manager loads based on the dependencies list you define in  package.json
 
 
-# Toolchain / developer eXperience 
+# Toolchain / developer eXperience
+ 
 for efficience workflow
 
 - final Stack
