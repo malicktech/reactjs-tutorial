@@ -24,17 +24,35 @@ Launches the test runner in the interactive watch mode<br>
 Builds the app for production to the `build` folder.<br>
 `npm run build`
 
+# UPGRADE
+
+* check upadte
+
+`npm outdated`
+
+* update all package
+
+`rm -rf package-lock.json`
+`rm -rf node_modules`
+
+`npm install eslint babel-eslint prettier-eslint flow-bin babel-preset-flow --save-dev`
+`npm update --save`
+`npm install --save react@latest`
+
 # DONE
 
 * Quick start | https://reactjs.org/docs/hello-world.html
 
+* use pretier, eslint config fle, babel es6/es7, flow language support
+https://hackernoon.com/configure-eslint-prettier-and-flow-in-vs-code-for-react-development-c9d95db07213
 
 ## IN PROGRESS
 
+* remove Flow 
+
 * Totorial | https://reactjs.org/tutorial/tutorial.html
 
-* use pretier, eslint config fle, babel es6/es7, flow language support
-https://hackernoon.com/configure-eslint-prettier-and-flow-in-vs-code-for-react-development-c9d95db07213
+
 
 * Développement JS moderne : REACT.js, FLUX, REDUX et GraphQL
 https://www.youtube.com/watch?v=F0Ral7AJ1rs 
