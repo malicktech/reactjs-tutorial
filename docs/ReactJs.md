@@ -43,6 +43,7 @@ représentation du DOM en JavaScript
 Au lieu de générer le DOM lui meme comme avec un langage de templating, c'est-à-dire au lieu de dialoguer avec les API du navigateur pour construire le DOM, on ne génère qu'une arborescence d'objets JavaScript en mémoire
 En termes de performance, React optimise les opérations sur le DOM en utilisant un DOM virtuel.
 les manios du DOM direct c'est trés consomatrice de ressources
+
 * JSX : 
 langage qui permet de générer des objets Javascript avec une notation similaire à HTML
  langage qui étend JavaScript avec une syntaxe déclarative permettant de définir le mode de rendu HTML du composant.
@@ -92,7 +93,8 @@ le serveru rend la première page, et le navigatur prend le relais
 
 * state : 
 représente état interne du composant,
-state  is a private property of components 
+To “remember” things, components use state.
+state  is a private property of components. 
 Nothing outside of a component should ever know about a component's state.
 mutable par le composnat lui même;
 c'est le changement de l'état qui lance la mise à jour de la vue;
@@ -102,7 +104,13 @@ le double data binding est supporté mais non encouragé
 - cascading update
 
 
+* controlled components ? 
+  components no longer maintain state and received values from parent component
 
+* Function Components ?
+  a simpler way to write components that only contain a render method and don’t have their own state.
+  Instead of defining a class
+  
 * Mixins
 c'est qui remplace l'héritage
 on peut rajouter des mixins à un composannt 

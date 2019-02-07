@@ -26,8 +26,7 @@ Builds the app for production to the `build` folder.<br>
 
 # DONE
 
-* Quick start 
-https://reactjs.org/docs/hello-world.html
+* Quick start | https://reactjs.org/docs/hello-world.html
 
 
 ## IN PROGRESS
