@@ -5,8 +5,6 @@ import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import logo from './logo.svg';
 import './App.css';
 
-import Page1 from './Page1';
-
 class Header extends Component {
   render() {
     return (
@@ -18,6 +16,11 @@ class Header extends Component {
           <h1 className="App-title">Welcome to React</h1>
         </header>
         <li>
+          <Link className="btn" to={'/'}>
+            Home
+          </Link>
+        </li>
+        <li>
           <Link className="btn" to={'/page1'}>
             Page1
           </Link>
@@ -25,6 +28,11 @@ class Header extends Component {
         <li>
           <Link className="btn" to={'/page2'}>
             Page2
+          </Link>
+        </li>
+        <li>
+          <Link className="btn" to={'/Tutorial'}>
+            Tutorial
           </Link>
         </li>
       </div>

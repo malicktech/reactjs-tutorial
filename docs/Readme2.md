@@ -24,7 +24,15 @@ Launches the test runner in the interactive watch mode<br>
 Builds the app for production to the `build` folder.<br>
 `npm run build`
 
+# DONE
+
+* Quick start 
+https://reactjs.org/docs/hello-world.html
+
+
 ## IN PROGRESS
+
+* Totorial | https://reactjs.org/tutorial/tutorial.html
 
 * use pretier, eslint config fle, babel es6/es7, flow language support
 https://hackernoon.com/configure-eslint-prettier-and-flow-in-vs-code-for-react-development-c9d95db07213
@@ -44,14 +52,9 @@ https://www.youtube.com/watch?v=AslncyG8whg
 
 * http://tech.m6web.fr/isomorphic-single-page-app-parfaite-react-flux/
 
-
-* Quick start 
-https://facebook.github.io/react/docs/installation.html
-
 * https://reactjs.org/docs/thinking-in-react.html
 
 * http://apprendre-le-js.com/react-par-la-pratique-introduction/
-
 
 * redux samples
 https://github.com/reactjs/redux/tree/master/examples
@@ -62,13 +65,12 @@ https://openclassrooms.com/courses/4555591?status=waiting-for-publication
 * aDVANCED
 https://reactjs.org/docs/jsx-in-depth.html
 
-
 * REdux - rxJS observable
 epics
 
 https://github.com/facebookincubator/create-react-app
 
-* https://reactjs.org/tutorial/tutorial.html
+
 
 * https://falkodev.gitbooks.io/tuto-symfony-react-webpack-babel/content/
 

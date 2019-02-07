@@ -11,6 +11,8 @@ import Home from './Home';
 import Header from './Header';
 import Page1 from './Page1';
 import Page2 from './Page2';
+import Tutorial from './tutorial/Tutorial';
+import Game from './tutorial/Game';
 
 const App = () => (
   <Router>
@@ -20,6 +22,7 @@ const App = () => (
         <Route exact path="/" component={Home} />
         <Route exact path="/page1" component={Page1} />
         <Route exact path="/page2" component={Page2} />
+        <Route exact path="/Tutorial" component={Game} />
       </main>
     </div>
   </Router>
